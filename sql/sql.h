@@ -12,7 +12,6 @@ public:
 
     static SqlPool* GetInstance();
     void init_mysql(char* sql_host, char* sql_user, char* sql_pwd, char* sql_db, int sql_port);
-    void addpool(MYSQL* m_sql);
     void Sql_destory();
 
 private:
