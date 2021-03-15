@@ -33,6 +33,7 @@ void Log::init(const char *file_name, int log_buf_size, int split_lines, int max
     if(max_queue_size > 1)
     {
         m_is_async = true;
+        m_log_queue<std::string>
 
     }
 
@@ -45,7 +46,4 @@ void Log::init(const char *file_name, int log_buf_size, int split_lines, int max
         exit(-1);
     }
 
-    infile.close();
-
-    return true;
 }
