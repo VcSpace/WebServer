@@ -11,7 +11,7 @@ OBJS = main.cpp ./server/server.cpp ./sql/sql.cpp ./log/log.cpp
 LIB = -lpthread -lmysqlclient
 
 all: $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) -o ./build/$(APP) $(LIB)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(APP) $(LIB)
 
 clean:
-	rm ./build/$(APP)
+	rm $(APP)
