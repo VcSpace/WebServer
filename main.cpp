@@ -52,7 +52,6 @@ int main(int argc, char** argv)
         }
     }
 
-
     SqlPool sql_pool;
     Server server;
     server.init(ip, port, sql_user_name, sql_pwd, sql_db, sql_port);
